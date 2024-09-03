@@ -389,3 +389,40 @@ p{
   font-size: 40px; 
   margin-bottom: 10px; 
 }
+
+.portfolio-button {
+  display: block;
+  margin: 20px auto; /* Centrar el botón */
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff8c00; /* Color de fondo del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-button:hover {
+  background-color: #e07b00; /* Color del botón al pasar el ratón */
+}
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 80px; /* Adjust sidebar width for mobile */
+    transition: all 0.1s; /* Faster transition for smaller screens */
+  }
+  .sidebar.active {
+    width: 60px; /* Adjust active sidebar width for mobile */
+  }
+  .menu ul li a .text {
+    /* Hide text labels for icons on mobile by default */
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar.active .menu ul li > a:hover .text {
+    /* Show text labels on hover for mobile */
+    opacity: 1;
+    visibility: visible;
+  }
+  /* Add more styles for other elements as needed */
+}
